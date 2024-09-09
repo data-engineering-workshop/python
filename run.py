@@ -4,7 +4,7 @@ import io
 import h3
 import requests
 
-res = requests.get("https://www.chattadata.org/api/views/nvdi-c4tt/rows.csv?$limit=100")
+res = requests.get("https://www.chattadata.org/api/views/nvdi-c4tt/rows.csv")
 
 with io.StringIO(res.text) as f:
     reader = csv.DictReader(f)
